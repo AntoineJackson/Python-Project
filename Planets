@@ -1,0 +1,98 @@
+class Planet_one():
+    def __init__(self, name, orbit_around_sun, moons):
+        self.name = name
+        self.orbit_around_sun = orbit_around_sun
+        self.moons = moons
+
+    def show_info(self):
+        print("Name - "+self.name)
+        print("Days To Orbit Around Sun - "+str(self.orbit_around_sun))
+        print("Moons - "+str(self.moons))
+
+class Planet_two(Planet_one):
+    def __init__(self, name, orbit_around_sun, moons):
+        Planet_one.__init__(self, name, orbit_around_sun, moons)
+
+    def show_info(self):
+        print("Name - "+self.name)
+        print("Days To Orbit Around Sun - "+str(self.orbit_around_sun))
+        print("Moons - "+str(self.moons))
+
+class Planet_three(Planet_one):
+    def __init__(self, name, orbit_around_sun, moons, continents):
+        Planet_one.__init__(self, name, orbit_around_sun, moons)
+        self.continents = continents
+
+    def show_info(self):
+        print("Name - "+self.name)
+        print("Days To Orbit Around Sun - "+str(self.orbit_around_sun))
+        print("Moons - "+str(self.moons))
+        print("Continents - "+str(self.continents))
+
+class Planet_four(Planet_one):
+    def __init__(self, name, orbit_around_sun, moons, interesting_fact):
+        Planet_one.__init__(self, name, orbit_around_sun, moons)
+        self.interesting_fact = interesting_fact
+
+    def show_info(self):
+        print("Name - "+self.name)
+        print("Days To Orbit Around Sun - "+str(self.orbit_around_sun))
+        print("Moons - "+str(self.moons))
+        print("Interesting Fact - "+(self.interesting_fact))
+
+class Planet_five(Planet_one):
+    def __init__(self, name, orbit_around_sun, moons, interesting_fact):
+        Planet_one.__init__(self, name, orbit_around_sun, moons)
+        self.interesting_fact = interesting_fact
+
+    def show_info(self):
+        print("Name - "+self.name)
+        print("Days To Orbit Around Sun - "+str(self.orbit_around_sun))
+        print("Moons - "+str(self.moons))
+        print("Interesting Fact - "+(self.interesting_fact))
+
+class Planet_six(Planet_one):
+    def __init__(self, name, orbit_around_sun, moons):
+        Planet_one.__init__(self, name, orbit_around_sun, moons)
+
+    def show_info(self):
+        print("Name - "+self.name)
+        print("Days To Orbit Around Sun - "+str(self.orbit_around_sun))
+        print("Moons - "+str(self.moons))
+
+class Planet_seven(Planet_one):
+    def __init__(self, name, orbit_around_sun, moons):
+        Planet_one.__init__(self, name, orbit_around_sun, moons)
+
+    def show_info(self):
+        print("Name - "+self.name)
+        print("Days To Orbit Around Sun - "+str(self.orbit_around_sun))
+        print("Moons - "+str(self.moons))
+
+class Planet_eight(Planet_one):
+    def __init__(self, name, orbit_around_sun, moons):
+        Planet_one.__init__(self, name, orbit_around_sun, moons)
+
+    def show_info(self):
+        print("Name - "+self.name)
+        print("Days To Orbit Around Sun - "+str(self.orbit_around_sun))
+        print("Moons - "+str(self.moons))
+    
+
+
+Mercury = Planet_one("Mercury", 116, 0)
+Mercury.show_info()
+Venus = Planet_two("Venus", 224.7, 0)
+Venus.show_info()
+Earth = Planet_three("Earth", 365, 1, 7)
+Earth.show_info()
+Mars = Planet_four("Mars", 687, 2, "Water was recently found on Mars!")
+Mars.show_info()
+Jupiter = Planet_five("Jupiter", 4331, 67, "Largest planet in Solar System!")
+Jupiter.show_info()
+Saturn = Planet_six("Saturn", 10759, 62)
+Saturn.show_info()
+Uranus = Planet_seven("Uranus", 30687, 27)
+Uranus.show_info()
+Neptune = Planet_eight("Neptune", 59899, 14)
+Neptune.show_info()
